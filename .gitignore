@@ -39,3 +39,4 @@ build/
 
 ### Custom ignores ###
 /src/main/java/*
+!/src/main/java/Converter.java
