@@ -13,7 +13,7 @@ public class Converter {
             String word = words[i];
             if (i == 0) {
                 word = word.isEmpty() ? word : word.toLowerCase();
-            } else {
+            } else if (!word.equals(word.toUpperCase())) {
                 word = word.isEmpty() ? word : Character.toUpperCase(word.charAt(0)) + word.substring(1).toLowerCase();
             }
             builder.append(word);
